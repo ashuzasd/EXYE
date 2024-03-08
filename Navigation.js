@@ -11,6 +11,8 @@ import topicScreen from './Components/topicScreen';
 import waitingScreen from './Components/waitingScreen';
 import QuestionScreen from './Components/QuestionScreen';
 import Submitted from './Components/Submitted';
+import GoogleSign from './Components/GoogleSign';
+
 
 
 
@@ -22,7 +24,7 @@ const Stack = createStackNavigator();
 const Navigation = () => {
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName="GetStarted">
+      <Stack.Navigator initialRouteName="GoogleSign">
         <Stack.Screen name='GetStarted' component={GetStartedScreen} options={{ headerShown: false}}/>
         <Stack.Screen name="Login" component={LoginScreen}  options={{ headerShown: false}}/>
         <Stack.Screen name="LoginTwo" component={LoginScreenTwo}  options={{ headerShown: false}}/>
@@ -34,6 +36,7 @@ const Navigation = () => {
         <Stack.Screen name="waiting" component={waitingScreen} options={{headerShown: false}}/>
         <Stack.Screen name='Question' component={QuestionScreen} options={{ headerShown: false}}/>
         <Stack.Screen name='submit' component={Submitted} />
+        <Stack.Screen name='GoogleSign' component={GoogleSign}/>
       </Stack.Navigator>
     </NavigationContainer>
   );
