@@ -5,7 +5,7 @@ export default function GoogleSign({promptAsync}) {
   return (
     <View style={styles.container}>
       <TouchableOpacity style={styles.button} onPress={()=> promptAsync ()}>
-        <Text style={styles.buttonText}>Sign In with Google</Text>
+        <Text style={styles.buttonText}>Sign In with Google ok</Text>
       </TouchableOpacity>
     </View>
   );
